@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gautam Kumar Jha Official | Daily Intraday Trading Signals</title>
+<meta name="description" content="Nifty, BankNifty & Options daily intraday trading signals and market analysis. Join the free Telegram channel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070b14; --gold:#f5a623; --green:#00c566; --red:#ff4d4f;
+  --text:#f4f6fb; --muted:#8fa0bf;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:'Inter',system-ui,sans-serif;
+  min-height:100vh; display:flex; flex-direction:column; overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* Ticker */
+.ticker{background:#000;border-bottom:1px solid #151b2b;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;gap:44px;padding:9px 0;animation:scroll 32s linear infinite}
+.ticker span{font-size:13px;font-weight:800}
+.ticker .up{color:var(--green);margin-left:8px;font-weight:600}
+.ticker .down{color:var(--red);margin-left:8px;font-weight:600}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* Nav */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  max-width:1240px;width:100%;margin:0 auto;padding:18px 24px;
+  border-bottom:1px solid #121829;
+}
+.brand{font-family:'Merriweather',serif;font-weight:900;color:var(--gold);font-size:clamp(14px,2.4vw,21px);letter-spacing:.2px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--green);color:#fff;font-weight:800;border-radius:999px;
+  transition:transform .15s,box-shadow .15s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,197,102,.35)}
+.btn-sm{padding:12px 28px;font-size:16px}
+.btn-lg{padding:20px 46px;font-size:clamp(16px,2.2vw,20px);box-shadow:0 8px 28px rgba(0,197,102,.3)}
+
+/* Hero */
+.hero{
+  flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;
+  padding:48px 20px 40px;
+  background:
+    radial-gradient(600px 300px at 50% 18%,rgba(245,166,35,.10),transparent 70%),
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px) 0 0/68px 68px,
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/68px 68px;
+}
+.avatar{
+  width:clamp(120px,18vw,170px);aspect-ratio:1;border-radius:50%;
+  border:3px solid var(--gold);padding:4px;
+  box-shadow:0 0 50px rgba(245,166,35,.35);
+  display:grid;place-items:center;overflow:hidden;background:#101728;
+}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.avatar b{font-family:'Merriweather',serif;font-size:44px;color:var(--gold)}
+.badge{
+  margin-top:34px;border:1px solid #5a4416;background:rgba(245,166,35,.08);
+  color:var(--gold);font-weight:800;font-size:clamp(10px,1.6vw,13px);
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:12px 22px;border-radius:999px;
+}
+h1{margin-top:34px;line-height:1.02}
+h1 .gold{
+  display:block;font-family:'Merriweather',serif;font-weight:900;color:var(--gold);
+  font-size:clamp(34px,8.2vw,88px);
+}
+h1 .white{
+  display:block;font-weight:900;color:#eef1f8;letter-spacing:-.03em;
+  font-size:clamp(46px,10.5vw,104px);margin-top:6px;
+}
+.tags{margin-top:30px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;color:#8ea0c4;font-size:clamp(12px,1.8vw,15px);letter-spacing:.22em}
+.tags i{font-style:normal;color:#5b6b8d}
+.sub{margin-top:26px;color:var(--muted);font-size:clamp(17px,2.6vw,24px);max-width:640px;line-height:1.5}
+.cta{margin-top:42px}
+.trust{margin-top:22px;color:#6f86b4;font-size:14px}
+
+/* Features */
+.features{
+  max-width:1000px;margin:0 auto;padding:10px 20px 60px;width:100%;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.card{background:#0c1322;border:1px solid #17203a;border-radius:16px;padding:24px;text-align:left}
+.card h3{font-size:18px;color:var(--gold);margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;line-height:1.55}
+
+footer{border-top:1px solid #121829;padding:24px 20px;text-align:center;color:#5d6b8a;font-size:12px;line-height:1.6}
+footer p{max-width:760px;margin:0 auto}
+
+@media(max-width:760px){
+  nav{padding:14px 16px}
+  .btn-sm{padding:10px 20px;font-size:14px}
+  .hero{padding:34px 16px 30px}
+  .features{grid-template-columns:1fr;padding-bottom:40px}
+  .btn-lg{width:100%;max-width:360px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ticker-track{animation:none}
+  .btn{transition:none}
+}
+</style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1382056743671484');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1382056743671484&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- Ticker (sample values - replace with a live feed if needed) -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>BANKNIFTY 52,148<em class="up">+0.87%</em></span>
+    <span>SENSEX 80,218<em class="up">+1.12%</em></span>
+    <span>FINNIFTY 23,890<em class="down">-0.34%</em></span>
+    <span>NIFTY IT 38,742<em class="up">+2.01%</em></span>
+    <span>MIDCAP 12,540<em class="up">+1.56%</em></span>
+    <span>BANKNIFTY 52,148<em class="up">+0.87%</em></span>
+    <span>SENSEX 80,218<em class="up">+1.12%</em></span>
+    <span>FINNIFTY 23,890<em class="down">-0.34%</em></span>
+    <span>NIFTY IT 38,742<em class="up">+2.01%</em></span>
+    <span>MIDCAP 12,540<em class="up">+1.56%</em></span>
+  </div>
+</div>
+
+<nav>
+  <a class="brand" href="#">GAUTAM KUMAR JHA (OFFICIAL)</a>
+  <a class="btn btn-sm" onclick="window.fbq&&fbq('track','Lead')" href="https://t.me/+wvFgeYk0RzNjNWQ1" target="_blank" rel="noopener noreferrer">Join Free</a>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="avatar">
+      <img id="pic" alt="Gautam Kumar Jha" referrerpolicy="no-referrer" src="https://drive.google.com/thumbnail?id=1zse7wQVv0-HqUFBJgOJLjCHEYpwW3Sga&sz=w800">
+    </div>
+
+    <div class="badge">India's Fastest Growing Trading Community</div>
+
+    <h1>
+      <span class="gold">GAUTAM KUMAR JHA</span>
+      <span class="white">OFFICIAL</span>
+    </h1>
+
+    <div class="tags"><span>NIFTY</span><i>•</i><span>BANKNIFTY</span><i>•</i><span>OPTIONS</span></div>
+    <p class="sub">Daily Intraday Trading Signals &amp; Market Analysis</p>
+
+    <div class="cta">
+      <a class="btn btn-lg" onclick="window.fbq&&fbq('track','Lead')" href="https://t.me/+wvFgeYk0RzNjNWQ1" target="_blank" rel="noopener noreferrer">Join Free Telegram Channel</a>
+    </div>
+    <p class="trust">Trusted by 5,000+ Traders • Daily Consistent Setups</p>
+  </section>
+
+  <section class="features">
+    <div class="card"><h3>Daily Intraday Signals</h3><p>Clear entry, target and stop-loss levels shared every trading day on Telegram.</p></div>
+    <div class="card"><h3>Market Analysis</h3><p>Pre-market view and key levels for Nifty and BankNifty before the opening bell.</p></div>
+    <div class="card"><h3>Free Community</h3><p>Join thousands of traders learning together. No fee to join the channel.</p></div>
+  </section>
+</main>
+
+<footer>
+  <p>Disclaimer: Trading in equity, futures and options involves substantial risk of loss. Content shared is for educational purposes only and is not investment advice. Past performance does not guarantee future results. Consult a SEBI-registered advisor before investing.</p>
+  <p style="margin-top:8px">© 2026 Gautam Kumar Jha Official</p>
+</footer>
+
+<script>
+/* Photo fallback chain: agar ek link fail ho to agla try hoga, last me gautam.jpg (local file), phir GKJ initials */
+(function(){
+  var id='1zse7wQVv0-HqUFBJgOJLjCHEYpwW3Sga';
+  var srcs=[
+    'https://drive.google.com/thumbnail?id='+id+'&sz=w800',
+    'https://lh3.googleusercontent.com/d/'+id+'=w800',
+    'https://drive.google.com/uc?export=view&id='+id,
+    'gautam.jpg'
+  ];
+  var img=document.getElementById('pic'),i=0;
+  img.onerror=function(){
+    i++;
+    if(i<srcs.length){img.src=srcs[i];}
+    else{img.replaceWith(Object.assign(document.createElement('b'),{textContent:'GKJ'}));}
+  };
+})();
+</script>
+</body>
+</html>
